@@ -6,6 +6,11 @@ pipeline {
         echo 'Hello'
       }
     }
+    stage('') {
+      steps {
+        input(message: 'Can i start the job', id: 'message', ok: 'yes')
+      }
+    }
   }
   post {
     always {
